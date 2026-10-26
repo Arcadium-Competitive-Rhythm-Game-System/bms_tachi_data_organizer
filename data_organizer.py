@@ -24,7 +24,7 @@ def output_sieglinde_csv(songs):
                                    "sha256": key_data["hashSHA256"], 
                                    "artist": song["artist"],
                                    "title": song["title"],
-                                   "subtitle": song.get("subtitle"),
+                                   "subtitle": song["data"].get("subtitle"),
                                    "sg_ec": ec,
                                    "sg_hc": hc
                                    })
